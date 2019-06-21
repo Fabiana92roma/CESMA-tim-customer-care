@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+<scheme description="" title="" version="2.0">
+	<nodes>
+		<node id="0" name="Corpus" position="(-28.0, 232.0)" project_name="Orange3-Text" qualified_name="orangecontrib.text.widgets.owcorpus.OWCorpus" title="Corpus" version="" />
+		<node id="1" name="Preprocess Text" position="(329.0, -21.0)" project_name="Orange3-Text" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" title="Preprocess Text" version="" />
+		<node id="2" name="Topic Modelling" position="(494.0, 107.0)" project_name="Orange3-Text" qualified_name="orangecontrib.text.widgets.owtopicmodeling.OWTopicModeling" title="Topic Modelling" version="" />
+		<node id="3" name="Corpus Viewer" position="(725.0, 140.0)" project_name="Orange3-Text" qualified_name="orangecontrib.text.widgets.owcorpusviewer.OWCorpusViewer" title="Corpus Viewer" version="" />
+		<node id="4" name="Word Cloud" position="(803.0, 373.0)" project_name="Orange3-Text" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" title="Word Cloud" version="" />
+		<node id="5" name="Save Data" position="(1035.0, 95.0)" project_name="Orange3" qualified_name="Orange.widgets.data.owsave.OWSave" title="Save Data" version="" />
+		<node id="6" name="Word Cloud" position="(408.0, 215.0)" project_name="Orange3-Text" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" title="Word Cloud (3)" version="" />
+		<node id="7" name="Preprocess Text" position="(115.33333333333331, 453.0)" project_name="Orange3-Text" qualified_name="orangecontrib.text.widgets.owpreprocess.OWPreprocess" title="Preprocess Text (2)" version="" />
+		<node id="8" name="Word Cloud" position="(542.0, 553.0)" project_name="Orange3-Text" qualified_name="orangecontrib.text.widgets.owwordcloud.OWWordCloud" title="Word Cloud (1)" version="" />
+		<node id="9" name="Bag of Words" position="(421.0, 660.0)" project_name="Orange3-Text" qualified_name="orangecontrib.text.widgets.owbagofwords.OWTBagOfWords" title="Bag of Words (2)" version="" />
+		<node id="10" name="Concordance" position="(523.9999999999998, 388.2222222222223)" project_name="Orange3-Text" qualified_name="orangecontrib.text.widgets.owconcordance.OWConcordance" title="Concordance" version="" />
+	</nodes>
+	<links>
+		<link enabled="true" id="0" sink_channel="Corpus" sink_node_id="1" source_channel="Corpus" source_node_id="0" />
+		<link enabled="true" id="1" sink_channel="Corpus" sink_node_id="2" source_channel="Corpus" source_node_id="1" />
+		<link enabled="true" id="2" sink_channel="Corpus" sink_node_id="3" source_channel="Corpus" source_node_id="2" />
+		<link enabled="true" id="3" sink_channel="Topic" sink_node_id="4" source_channel="Selected Topic" source_node_id="2" />
+		<link enabled="true" id="4" sink_channel="Data" sink_node_id="5" source_channel="Matching Docs" source_node_id="3" />
+		<link enabled="true" id="5" sink_channel="Corpus" sink_node_id="6" source_channel="Corpus" source_node_id="1" />
+		<link enabled="true" id="6" sink_channel="Corpus" sink_node_id="7" source_channel="Corpus" source_node_id="0" />
+		<link enabled="true" id="7" sink_channel="Corpus" sink_node_id="8" source_channel="Corpus" source_node_id="7" />
+		<link enabled="true" id="8" sink_channel="Corpus" sink_node_id="9" source_channel="Corpus" source_node_id="7" />
+		<link enabled="true" id="9" sink_channel="Corpus" sink_node_id="10" source_channel="Corpus" source_node_id="7" />
+	</links>
+	<annotations />
+	<thumbnail />
+	<node_properties>
+		<properties format="pickle" node_id="0">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYDAAAAHJlY2VudF9maWxlc3ECXXEDKFgx
+AAAAQzovVXNlcnMvUmFmZmFlbGUgU3BhdGFyby9EZXNrdG9wL09WUzEwX2NsZWFuLmNzdnEEWBEA
+AABib29rLWV4Y2VycHRzLnRhYnEFWBgAAABncmltbS10YWxlcy1zZWxlY3RlZC50YWJxBlgYAAAA
+ZWxlY3Rpb24tdHdlZXRzLTIwMTYudGFicQdYFwAAAGZyaWVuZHMtdHJhbnNjcmlwdHMudGFicQhY
+DAAAAGFuZGVyc2VuLnRhYnEJZVgTAAAAc2F2ZWRXaWRnZXRHZW9tZXRyeXEKQzIB2dDLAAIAAAAA
+AsgAAAEzAAAEtwAAArUAAALRAAABWQAABK4AAAKsAAAAAAAAAAAHgHELWAsAAABfX3ZlcnNpb25f
+X3EMSwFYEAAAAGNvbnRleHRfc2V0dGluZ3NxDV1xDmNPcmFuZ2Uud2lkZ2V0cy5zZXR0aW5ncwpD
+b250ZXh0CnEPKYFxEH1xEShYBAAAAHRpbWVxEkdB10Lld8HJLlgGAAAAdmFsdWVzcRN9cRQoWAoA
+AAB1c2VkX2F0dHJzcRVdcRZYBAAAAHRleHRxF0tnhnEYYUr9////hnEZaAxLAXVYCgAAAGF0dHJp
+YnV0ZXNxGilYBQAAAG1ldGFzcRtYBgAAAGRvY19pZHEcSwOGcR1YBAAAAHRleHRxHksDhnEfhnEg
+WAoAAABjbGFzc192YXJzcSEpdWJhdS4=
+</properties>
+		<properties format="literal" node_id="1">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01 \x00\x00\x00\x12\x00\x00\x047\x00\x00\x02[\x00\x00\x01)\x00\x00\x008\x00\x00\x04.\x00\x00\x02R\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80', 'filters': {'checked': [0, 2, 3, 4], 'enabled': True, 'keep_n': 100, 'max_df': 0.5, 'min_df': 0.05, 'pattern': '\\.|,|:|;|!|\\?|\\(|\\)|\\||\\+|\'|"|‘|’|“|”|\'|\\’|…|\\-|–|—|\\$|&amp;|\\*|&gt;|&lt;|\\/|\\[|\\]', 'recent_lexicon_files': ['(none)'], 'recent_sw_files': ['C:/Users/Raffaele Spataro/Desktop/mystop.txt', '(none)'], 'stopwords_language': 'Italian', 'use_df': False, 'use_keep_n': False}, 'ngrams_range': {'enabled': False, 'ngrams_range': (1, 2)}, 'normalizer': {'enabled': False, 'method_index': 1, 'snowball_language': 'Italian', 'udpipe_language': 'Italian', 'udpipe_tokenizer': False}, 'pos_tagger': {'enabled': False, 'method_index': 0, 'stanford': {'recent_files': ['(none)'], 'recent_provider': ['(none)'], 'resource_path': ''}}, 'tokenizer': {'enabled': True, 'method_index': 0, 'pattern': ''}, 'transformers': {'checked': [0, 1], 'enabled': True}, '__version__': 1}</properties>
+		<properties format="literal" node_id="2">{'autocommit': True, 'controlAreaVisible': True, 'method_index': 1, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01W\x00\x00\x00\xbb\x00\x00\x05\\\x00\x00\x02U\x00\x00\x01`\x00\x00\x00\xe1\x00\x00\x05S\x00\x00\x02L\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80', 'hdp': {'K': 15, 'T': 150, 'alpha': 1, 'eta': 0.01, 'gamma': 1, 'kappa': 1, 'tau': 64}, 'lda': {'num_topics': 4}, 'lsi': {'num_topics': 3}, '__version__': 1, 'context_settings': []}</properties>
+		<properties format="pickle" node_id="3">gAN9cQAoWAoAAABhdXRvY29tbWl0cQGIWBIAAABjb250cm9sQXJlYVZpc2libGVxAohYEwAAAHNh
+dmVkV2lkZ2V0R2VvbWV0cnlxA0MyAdnQywACAAAAAAGnAAABFQAABocAAAO4AAABsAAAATsAAAZ+
+AAADrwAAAAAAAAAAB4BxBFgLAAAAc2hvd190b2tlbnNxBYlYCwAAAF9fdmVyc2lvbl9fcQZLAVgQ
+AAAAY29udGV4dF9zZXR0aW5nc3EHXXEIKGNPcmFuZ2Uud2lkZ2V0cy5zZXR0aW5ncwpDb250ZXh0
+CnEJKYFxCn1xCyhYBAAAAHRpbWVxDEdB10LmMGHaDlgGAAAAdmFsdWVzcQ19cQ4oWBAAAABkaXNw
+bGF5X2ZlYXR1cmVzcQ9dcRAoWAcAAABUb3BpYyAxcRFLZoZxElgHAAAAVG9waWMgMnETS2aGcRRY
+BwAAAFRvcGljIDNxFUtmhnEWWAcAAABUb3BpYyA0cRdLZoZxGFgGAAAAZG9jX2lkcRlLZ4ZxGlgE
+AAAAdGV4dHEbS2eGcRxlSv3///+GcR1YDwAAAGRpc3BsYXlfaW5kaWNlc3EeXXEfKEsASwFLAksD
+SwRLBWVYDQAAAHJlZ2V4cF9maWx0ZXJxIFgAAAAAcSFK/////4ZxIlgOAAAAc2VhcmNoX2luZGlj
+ZXNxI11xJEsAYWgGSwF1WAoAAABhdHRyaWJ1dGVzcSUoWAcAAABUb3BpYyAxcSZLAoZxJ1gHAAAA
+VG9waWMgMnEoSwKGcSlYBwAAAFRvcGljIDNxKksChnErWAcAAABUb3BpYyA0cSxLAoZxLXRxLlgF
+AAAAbWV0YXNxL2gZSwOGcTBoG0sDhnExhnEyWAoAAABjbGFzc192YXJzcTMpdWJoCSmBcTR9cTUo
+aAxHQddC5elyRg5oDX1xNihoD11xNyhYBwAAAFRvcGljIDFxOEtmhnE5WAcAAABUb3BpYyAycTpL
+ZoZxO2gZS2eGcTxoG0tnhnE9ZUr9////hnE+aB5dcT8oSwBLAUsCSwNlaCBoIUr/////hnFAaCNd
+cUEoSwBLAUsCSwNlaAZLAXVoJVgHAAAAVG9waWMgMXFCSwKGcUNYBwAAAFRvcGljIDJxREsChnFF
+hnFGaC9YBgAAAGRvY19pZHFHSwOGcUhYBAAAAHRleHRxSUsDhnFKhnFLaDMpdWJldS4=
+</properties>
+		<properties format="pickle" node_id="4">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlx
+AkMyAdnQywACAAAAAAFxAAAAQgAABboAAALpAAABegAAAGgAAAWxAAAC4AAAAAAAAAAAB4BxA1gO
+AAAAc2VsZWN0ZWRfd29yZHNxBGNidWlsdGlucwpzZXQKcQVdcQZYCAAAAHByb2JsZW1hcQdhhXEI
+UnEJWAsAAAB3b3Jkc19jb2xvcnEKiFgKAAAAd29yZHNfdGlsdHELSwFYCwAAAF9fdmVyc2lvbl9f
+cQxLAXUu
+</properties>
+		<properties format="literal" node_id="5">{'add_type_annotations': True, 'auto_save': False, 'controlAreaVisible': True, 'filename': 'C:/Users/Raffaele Spataro/Desktop/OVS10_clean.tab', 'filter': 'Tab-separated values (*.tab)', 'last_dir': 'C:/Users/Raffaele Spataro/Desktop', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x03@\x00\x00\x01\x9c\x00\x00\x04Z\x00\x00\x02M\x00\x00\x03I\x00\x00\x01\xc2\x00\x00\x04Q\x00\x00\x02D\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80', '__version__': 2}</properties>
+		<properties format="pickle" node_id="6">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlx
+AkMyAdnQywACAAAAAAFxAAAAQgAABboAAALpAAABegAAAGgAAAWxAAAC4AAAAAAAAAAAB4BxA1gO
+AAAAc2VsZWN0ZWRfd29yZHNxBGNidWlsdGlucwpzZXQKcQVdcQaFcQdScQhYCwAAAHdvcmRzX2Nv
+bG9ycQmIWAoAAAB3b3Jkc190aWx0cQpLAFgLAAAAX192ZXJzaW9uX19xC0sBdS4=
+</properties>
+		<properties format="literal" node_id="7">{'autocommit': True, 'controlAreaVisible': True, 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x01 \x00\x00\x00\x12\x00\x00\x047\x00\x00\x02[\x00\x00\x01)\x00\x00\x008\x00\x00\x04.\x00\x00\x02R\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80', 'filters': {'checked': [0, 2, 3], 'enabled': True, 'keep_n': 5, 'max_df': 0.9, 'min_df': 0.05, 'pattern': '\\.|,|:|;|!|\\?|\\(|\\)|\\||\\+|\'|"|‘|’|“|”|\'|\\’|…|\\-|–|—|\\$|&amp;|\\*|&gt;|&lt;|\\/|\\[|\\]', 'recent_lexicon_files': ['(none)'], 'recent_sw_files': ['C:/Users/Raffaele Spataro/Desktop/mystop.txt', '(none)'], 'stopwords_language': 'Italian', 'use_df': False, 'use_keep_n': False}, 'ngrams_range': {'enabled': False, 'ngrams_range': (1, 2)}, 'normalizer': {'enabled': False, 'method_index': 1, 'snowball_language': 'Italian', 'udpipe_language': 'Italian', 'udpipe_tokenizer': False}, 'pos_tagger': {'enabled': False, 'method_index': 0, 'stanford': {'recent_files': ['(none)'], 'recent_provider': ['(none)'], 'resource_path': ''}}, 'tokenizer': {'enabled': True, 'method_index': 0, 'pattern': '\\w+'}, 'transformers': {'checked': [0, 1], 'enabled': True}, '__version__': 1}</properties>
+		<properties format="pickle" node_id="8">gAN9cQAoWBIAAABjb250cm9sQXJlYVZpc2libGVxAYhYEwAAAHNhdmVkV2lkZ2V0R2VvbWV0cnlx
+AkMyAdnQywACAAAAAABYAAAApwAABKEAAANOAAAAYQAAAM0AAASYAAADRQAAAAAAAAAAB4BxA1gO
+AAAAc2VsZWN0ZWRfd29yZHNxBGNidWlsdGlucwpzZXQKcQVdcQaFcQdScQhYCwAAAHdvcmRzX2Nv
+bG9ycQmIWAoAAAB3b3Jkc190aWx0cQpLAFgLAAAAX192ZXJzaW9uX19xC0sBdS4=
+</properties>
+		<properties format="literal" node_id="9">{'autocommit': True, 'controlAreaVisible': True, 'normalization': '(None)', 'savedWidgetGeometry': b'\x01\xd9\xd0\xcb\x00\x02\x00\x00\x00\x00\x03\x15\x00\x00\x01z\x00\x00\x04k\x00\x00\x02n\x00\x00\x03\x1e\x00\x00\x01\xa0\x00\x00\x04b\x00\x00\x02e\x00\x00\x00\x00\x00\x00\x00\x00\x07\x80', 'wglobal': '(None)', 'wlocal': 'Count', '__version__': 1}</properties>
+		<properties format="pickle" node_id="10">gAN9cQAoWAoAAABhdXRvY29tbWl0cQGIWA0AAABjb250ZXh0X3dpZHRocQJLClgSAAAAY29udHJv
+bEFyZWFWaXNpYmxlcQOIWBMAAABzYXZlZFdpZGdldEdlb21ldHJ5cQRDMgHZ0MsAAgAA////9///
+//cAAAeIAAAEDgAAApQAAAE7AAAE6wAAAsoAAAAAAgAAAAeAcQVYDQAAAHNlbGVjdGVkX3Jvd3Nx
+Bl1xB1gLAAAAX192ZXJzaW9uX19xCEsBWBAAAABjb250ZXh0X3NldHRpbmdzcQldcQpjT3Jhbmdl
+LndpZGdldHMuc2V0dGluZ3MKQ29udGV4dApxCymBcQx9cQ0oWAQAAAB0aW1lcQ5HQddC5pbDl59Y
+BgAAAHZhbHVlc3EPfXEQKFgEAAAAd29yZHERWAcAAAByaXNvbHRvcRJK/////4ZxE2gISwF1WAoA
+AABhdHRyaWJ1dGVzcRQpWAUAAABtZXRhc3EVWAYAAABkb2NfaWRxFksDhnEXWAQAAAB0ZXh0cRhL
+A4ZxGYZxGlgKAAAAY2xhc3NfdmFyc3EbKXViYXUu
+</properties>
+	</node_properties>
+	<session_state>
+		<window_groups />
+	</session_state>
+</scheme>
